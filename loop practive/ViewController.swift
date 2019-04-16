@@ -53,6 +53,7 @@ class ViewController: UIViewController {
     
     @IBAction func defaultButton(_ sender: Any) {
         switchOutlet.isOn = true
+        sliderOutlet.maximumValue = 10
         sliderOutlet.value = 5.0
         stepperOutlet.value = 0
         switchLabel.text = "Switch on"
