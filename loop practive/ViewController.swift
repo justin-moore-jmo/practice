@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func syncButton(_ sender: Any) {
-        if stepperOutlet.value >= 10{
+        if stepperOutlet.value >= Double(sliderOutlet.maximumValue){
         sliderOutlet.maximumValue = Float (stepperOutlet.value)
         }
         
